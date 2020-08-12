@@ -20,3 +20,16 @@ function count(arrobas) {
 console.log(count(fakeArrobas))
 
 //Ordenar
+
+function sort(counted) {
+    const entries = []
+
+    for(prop in counted){
+        entries.push([prop, counted[prop]])
+    }
+    const sorted = entries.sort((a, b) => b[1] - a[1])
+    console.log(sorted)
+
+}
+
+sort(count(fakeArrobas))
